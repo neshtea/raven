@@ -1,0 +1,12 @@
+<h1>Message</h1>
+
+<p><b>Author:</b> <%= @message.user %></p>
+<p><%= @message.message %></p>
+
+<%= form_for @conn, page_path(@conn, :edit, @message.id), [method: "get"], fn _ -> %>
+    <%= submit "Edit" %>
+<% end %>
+
+<%= form_for @conn, page_path(@conn, :delete, @message.id), [method: "delete"], fn _ -> %>
+    <%= submit "Delete" %>
+<% end %>

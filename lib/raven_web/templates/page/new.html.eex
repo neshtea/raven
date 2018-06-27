@@ -1,0 +1,12 @@
+<h1>New message</h1>
+
+<%= form_for @conn, page_path(@conn, :create), fn f -> %>
+
+    <%= label f, :user, "Your name:" %>
+    <%= text_input f, :user %>
+    
+    <%= label f, :message, "Your message:" %>
+    <%= text_input f, :message %>
+
+    <%= submit "Submit" %>
+<% end %>
