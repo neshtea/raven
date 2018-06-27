@@ -25,7 +25,6 @@
       </main>
 
       <a href="<%= page_path(@conn, :index) %>">Home</a>
-      <a href="<%= page_path(@conn, :new) %>">New Post</a>
       
     </div> <!-- /container -->
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>

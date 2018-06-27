@@ -14,11 +14,5 @@ defmodule RavenWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    get "/new", PageController, :new
-    get "/:id/edit", PageController, :edit
-    get "/:id/show", PageController, :show
-    post "/create", PageController, :create
-    post "/change", PageController, :change
-    delete "/:id/delete", PageController, :delete
   end
 end

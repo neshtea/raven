@@ -1,9 +1,1 @@
 <h1>All Messages</h1>
-
-<%= for {_, message} <- @messages do %>
-  <div style="border: 1px solid grey; border-radius: 5px; margin-bottom: 10px; padding: 10px">
-    <p><a href="<%= page_path(@conn, :show, message.id) %>"><%= message.user %> wrote:</a><p>
-    <p><%= message.message %></p>
-    <p><small>(<%= message.id %>)</small></p>
-  </div>
-<% end %>
